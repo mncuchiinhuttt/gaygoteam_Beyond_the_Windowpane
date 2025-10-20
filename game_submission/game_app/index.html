@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beyond the Window Frame</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							inter: ['Inter', 'sans-serif'],
+						},
+						colors: {
+							slateNight: '#111827',
+							textSoft: '#e2e8f0',
+							accentLavender: '#a78bfa',
+						},
+						keyframes: {
+							'fade-up': {
+								'0%': { opacity: 0, transform: 'translateY(24px)' },
+								'100%': { opacity: 1, transform: 'translateY(0)' },
+							},
+						},
+						animation: {
+							'fade-up': 'fade-up 1.6s ease-out both',
+						},
+						boxShadow: {
+							glow: '0 0 45px rgba(167, 139, 250, 0.18)',
+						},
+					},
+				},
+			};
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body
+		class="relative min-h-screen overflow-hidden bg-slateNight text-textSoft antialiased font-inter"
+	>
+		<div
+			class="absolute inset-0 bg-cover bg-center"
+			style="background-image: url('./assets/background.jpg');"
+			aria-hidden="true"
+		></div>
+		<div
+			class="absolute inset-0 bg-slateNight/80"
+			aria-hidden="true"
+		></div>
+		<div class="relative z-10 flex min-h-screen items-center justify-center px-6">
+			<div
+				class="w-full max-w-xl rounded-[2.5rem] border border-white/10 bg-white/5 p-12 backdrop-blur-xl shadow-[0_25px_70px_rgba(5,10,25,0.55)]"
+			>
+				<div class="flex flex-col items-center text-center">
+					<div class="space-y-4 animate-fade-up" style="animation-delay: 0.1s">
+						<span class="text-sm uppercase tracking-[0.55em] text-white/60">
+							Beyond the Window Frame
+						</span>
+						<h1 class="text-4xl sm:text-5xl font-light text-white/70">
+							A quiet journey toward the light within
+						</h1>
+						<p class="text-base text-white/70">
+							Pause, breathe, and choose the next step of your story.
+						</p>
+					</div>
+					<nav
+						class="mt-12 w-full space-y-4 animate-fade-up"
+						style="animation-delay: 0.4s"
+						aria-label="Primary"
+					>
+						<a
+							href="./journey/begin.html"
+							class="group block rounded-full border border-white/15 bg-white/5 px-10 py-4 text-lg font-medium text-textSoft transition duration-300 ease-out hover:border-accentLavender/70 hover:bg-accentLavender/10 hover:text-accentLavender focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accentLavender"
+						>
+							<span class="flex items-center justify-center gap-3 text-white/70">
+								<span>Begin Journey</span>
+												<span
+													class="transition-transform duration-300 group-hover:translate-x-1"
+													aria-hidden="true"
+												>
+													&rarr;
+												</span>
+							</span>
+						</a>
+						<a
+							href="./understanding.html"
+							class="group block rounded-full border border-white/15 px-10 py-4 text-lg font-medium text-textSoft transition duration-300 ease-out hover:border-accentLavender/70 hover:bg-accentLavender/10 hover:text-accentLavender focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accentLavender"
+						>
+							<span class="flex items-center justify-center gap-3 text-white/70">
+								<span>Understand</span>
+												<span
+													class="transition-transform duration-300 group-hover:translate-x-1"
+													aria-hidden="true"
+												>
+													&rarr;
+												</span>
+							</span>
+						</a>
+						<a
+							href="./credits.html"
+							class="group block rounded-full border border-white/15 px-10 py-4 text-lg font-medium text-textSoft transition duration-300 ease-out hover:border-accentLavender/70 hover:bg-accentLavender/10 hover:text-accentLavender focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accentLavender"
+						>
+							<span class="flex items-center justify-center gap-3 text-white/70">
+								<span>Credits</span>
+												<span
+													class="transition-transform duration-300 group-hover:translate-x-1"
+													aria-hidden="true"
+												>
+													&rarr;
+												</span>
+							</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

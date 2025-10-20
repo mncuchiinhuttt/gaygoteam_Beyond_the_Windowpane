@@ -1,0 +1,526 @@
+All files store in game_app
+
+The Prompt for Copilot AI
+Role: You are an expert front-end developer with a strong sense of UI/UX design, specializing in creating atmospheric and modern web interfaces.
+
+Objective: Create a single-file, fully responsive game menu/dashboard for a game titled "Beyond the Window Frame". The game's theme revolves around mental illness, so the design should be introspective, minimalist, and atmospheric, but with an underlying sense of hope. The entire project must be contained within a single index.html file, using CDN links for all external resources to ensure maximum simplicity without any installation or build steps.
+
+Project Details:
+
+Game Title: Beyond the Window Frame
+
+Core Theme: Mental health, introspection, solitude, and the journey towards healing. The UI should reflect a mood that is calm and slightly melancholic, but not depressing.
+
+Key Components:
+
+The game title prominently displayed.
+
+Three main navigation buttons:
+
+Begin Journey (Play Game)
+
+Understand (About Mental Illnesses)
+
+Credits
+
+A subtle, animated background that fits the theme.
+
+Technical Specifications:
+
+HTML5: A clean, semantic HTML structure.
+
+Tailwind CSS 4.0 (CDN): Use the latest Tailwind v4 script via CDN. Do not use any local installation or npm. All styling must be done using Tailwind utility classes directly in the HTML.
+
+JavaScript: All necessary JavaScript for interactivity and animations must be included within a <script> tag in the same HTML file.
+
+External Libraries (CDN Only - No Install):
+
+Google Fonts: Use the 'Inter' font for a clean, modern look. Import it via CDN.
+
+tsParticles (CDN): Use this for a subtle, animated background effect. The effect should be slow and gentle, like dust motes floating in a sunbeam or very light rain against a window. Find a suitable preset or configure it to be minimalistic.
+
+Design and UI/UX Requirements:
+
+Layout:
+
+A vertically and horizontally centered main content area on a full-screen background.
+
+The layout should be minimalist and focused, with plenty of negative space.
+
+Color Palette:
+
+Background: A dark, moody, desaturated blue or gray (e.g., #1a202c or a dark slate).
+
+Text/Title: A soft, off-white (e.g., #e2e8f0).
+
+Buttons/Accents: Use a slightly brighter but still muted color for hover effects, perhaps a soft lavender (#a78bfa) or a muted teal to signify hope.
+
+Typography:
+
+Title: Large, clean, and elegant using the 'Inter' font (e.g., font-light or font-normal).
+
+Buttons: Clean, readable, and well-spaced. text-lg or text-xl.
+
+The "Window Frame" Concept:
+
+The central menu content (title and buttons) could be subtly framed, as if the user is looking through a window. This can be achieved with a faint border, a box-shadow, or by having the background animation contained within a central rectangle.
+
+Buttons and Interactivity:
+
+The buttons should be simple text links or have very soft, pill-shaped backgrounds.
+
+Hover Effect: On hover, the buttons should have a smooth, subtle transition. For example, the text color could change to the accent color, or a soft glow could appear around them. Avoid sharp, sudden changes.
+
+Animations:
+
+On Load: The title and buttons should fade in gracefully over 1-2 seconds.
+
+Background: The tsParticles background should be constantly but slowly moving. It should not be distracting. Configure it for a low number of particles with slow, random movement.
+
+Final Deliverable:
+
+Provide a single, complete index.html file that includes all HTML, CSS (via Tailwind classes), and JavaScript. The code should be well-commented, especially the tsParticles configuration, so I can easily tweak it later.
+---
+Role: You are an expert front-end developer and UI/UX designer, tasked with creating an empathetic and visually engaging information page.
+
+Objective: Create a single-file, fully responsive "Understanding" page for the game "Beyond the Window Frame". This page will present key symptoms related to mental illness in a card-based format, maintaining the minimalist and atmospheric design established in the main menu. The entire project must be contained within a single understand.html file, using CDN links for all external resources.
+
+Project Details:
+
+Page Title: Understanding
+
+Theme: Continue the introspective, calm, and slightly melancholic yet hopeful mood. The page should feel educational but not clinical, focusing on empathy.
+
+Content: The page will display information about several symptoms experienced by the character 'An'. Each symptom should be presented as a distinct, visually appealing card.
+
+Key Components:
+
+A prominent page title: "Understanding An's Journey" or "Understanding Beyond the Window Frame".
+
+A collection of cards, each detailing one symptom.
+
+A "Back to Menu" button at the bottom of the page, styled consistently with the previous main menu buttons.
+
+Content for Cards (Each point below should be a separate card):
+
+Anhedonia (Loss of Interest): An no longer finds joy in things he used to. He gives up football, food tastes "like ash," and the thought of his friends' "easy chatter" feels "exhausting."
+
+Persistent Sadness/Emptiness: He is described as "hollow" and feeling a "sense of emptiness." The "Unending Grey" ending explicitly shows this as a lifelong "hollow ache."
+
+Cognitive Difficulties (Brain Fog): The central metaphor of the game is An "navigating a fog that's slowly rolling in," which obscures the world. This manifests as an inability to focus, his mind going "static-filled blank," and his brain feeling "water-logged."
+
+Social Withdrawal and Isolation: He actively retreats into his room ("The Bubble"), uses headphones as a "shield," and pushes away his friend Linh, finding it "easier" and " safer" to be alone.
+
+Fatigue and Sleep Issues: His internal thought reveals he "barely sleeps as it is," and his teacher describes his writing as "tired."
+
+Feelings of Worthlessness and Guilt: He feels "worthless" after his mother's comments and is "stuck between feeling like a failure and trying to be a good son."
+
+Extreme Academic Pressure: The game also highlights how intense academic anxiety and perfectionism (the "terror" of not getting a perfect score) act as major catalysts and contributing factors to his depressive state.
+
+Technical Specifications:
+
+HTML5: Clean, semantic HTML structure.
+
+Tailwind CSS 4.0 (CDN): Use the latest Tailwind v4 script via CDN. All styling must be done using Tailwind utility classes directly in the HTML.
+
+CDN Script: <script src="https://cdn.tailwindcss.com/4.0.0-alpha.13/tailwind.min.js"></script>
+
+JavaScript: Minimal JavaScript might be needed for animations if not purely CSS-based.
+
+External Libraries (CDN Only - No Install):
+
+Google Fonts: Use 'Inter' font, imported via CDN, for consistency.
+
+tsParticles (CDN): Reuse the same subtle, animated background effect from the main menu for continuity.
+
+CDN Script: <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+Design and UI/UX Requirements:
+
+Overall Layout:
+
+Full-screen background with tsParticles animation.
+
+Content should be vertically centered on larger screens, but scrollable if necessary on smaller screens to accommodate all cards.
+
+Cards should be arranged in a responsive grid (e.g., 1 column on small screens, 2-3 columns on larger screens) for readability.
+
+Maintain the dark, atmospheric color scheme (#1a202c background, soft off-white text #e2e8f0, soft lavender/teal accents).
+
+Page Title:
+
+Large, centered, and prominent at the top of the content area. font-inter, text-4xl or text-5xl.
+
+Cards Design:
+
+Each symptom should be encapsulated in a distinct card.
+
+Appearance: Cards should have a slightly translucent or desaturated background (e.g., bg-white/5 or bg-slate-700/50) with a soft border or shadow, giving them a sense of depth against the background. Rounded corners are preferred.
+
+Padding and Spacing: Ample internal padding within each card and generous margin between cards for breathability.
+
+Content within Card:
+
+Title: The symptom name (e.g., "Anhedonia (Loss of Interest)") should be a slightly bolder font and a slightly lighter color than the body text within the card.
+
+Body: The descriptive text should be clear and readable.
+
+Card Edge Design: Incorporate a subtle "edge" design. This could be:
+
+A delicate, thin border around the card that lights up faintly on hover.
+
+A subtle box-shadow that creates a gentle glow effect.
+
+A slightly lighter background color for the card itself, making it stand out as a "window" into that specific symptom.
+
+Animations (Card Specific):
+
+Fade-in on Load: All cards should fade in subtly after the page loads, perhaps with a slight delay between cards to create a staggered, emergent effect.
+
+Subtle Hover Effect: When hovering over a card, it should exhibit a very gentle animation:
+
+A slight scale up (e.g., scale-102).
+
+A very subtle box-shadow expansion or change in color.
+
+A delicate border highlight.
+
+Ensure the animation is smooth and slow (transition-all duration-300).
+
+Back Button:
+
+Located prominently at the bottom of the content area.
+
+Styled identically to the buttons on the main menu page.
+
+It should navigate back to index.html.
+
+Final Deliverable:
+
+Provide a single, complete understand.html file that includes all HTML, CSS (via Tailwind classes), and JavaScript. The code should be clean, readable, and well-commented, especially regarding the tsParticles configuration and card animations.
+---
+Of course! Here is a well-structured prompt for Copilot AI to design the credits page, ensuring it perfectly matches the aesthetic and technical requirements of your game.
+
+The Prompt for Copilot AI (Credits Page)
+Role: You are an expert front-end developer and UI/UX designer with a talent for creating atmospheric and cinematic web experiences.
+
+Objective: Create a single-file, fully responsive "Credits" page for the game "Beyond the Window Frame". This page should present the development team and institution credits in a clean, elegant, and cinematic way, consistent with the game's established minimalist and atmospheric theme. The entire project must be contained within a single credits.html file, using CDN links for all external resources.
+
+Project Details:
+
+Page Title: Credits
+
+Theme: Maintain the introspective, calm, and slightly melancholic yet hopeful mood. The credits should feel respectful and polished.
+
+Content to Display:
+
+Game Title: "Beyond the Window Frame"
+
+Team Name: "gaygoteam"
+
+Team Members: "Vo Minh Long", "Le Dang Quynh Anh", "Tran Minh Quan", "Pham Gia Bao"
+
+Institution: "RMIT University"
+
+Key Components:
+
+A structured and visually appealing layout for the credits.
+
+A "Back to Menu" button.
+
+Technical Specifications:
+
+HTML5: A clean, semantic HTML structure.
+
+Tailwind CSS 4.0 (CDN): Use the latest Tailwind v4 script via CDN. All styling must be done using Tailwind utility classes directly in the HTML.
+
+CDN Script: <script src="https://cdn.tailwindcss.com/4.0.0-alpha.13/tailwind.min.js"></script>
+
+JavaScript: Use minimal JavaScript within a <script> tag for the fade-in animations.
+
+External Libraries (CDN Only - No Install):
+
+Google Fonts: Use the 'Inter' font, imported via CDN, for consistency.
+
+tsParticles (CDN): Reuse the same subtle, animated background effect from the main menu and understanding pages.
+
+CDN Script: <script src="https://cdn.jsdelivr/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+Design and UI/UX Requirements:
+
+Layout:
+
+A full-screen, persistent tsParticles background.
+
+All content should be placed within a single, vertically and horizontally centered container on the page. This creates a focused, cinematic feel.
+
+The layout should be clean with significant negative space.
+
+Color Palette and Typography:
+
+Continue the established color scheme: a dark, moody background (#1a202c), soft off-white text (#e2e8f0), and muted accents for hover effects if needed.
+
+Use a clear typographic hierarchy to structure the information:
+
+Game Title ("Beyond the Window Frame"): Should be present but subtle, perhaps smaller and at the very top or bottom of the credit block.
+
+"Created By": A simple, clean heading.
+
+Team Name ("gaygoteam"): The most prominent text element. Make it bold and larger than the other text (text-3xl or text-4xl).
+
+Team Members: A clean list under the team name. Use a standard text size.
+
+Institution: Give this its own section, perhaps with a heading like "With support from" or "An RMIT University Project", followed by the university name.
+
+Cinematic Animation:
+
+The primary goal is to make the credits appear gracefully.
+
+Staggered Fade-In: On page load, each line or logical group of text should fade in sequentially. For example:
+
+"Created By" fades in.
+
+"gaygoteam" fades in (0.5s delay).
+
+The list of names fades in (1.0s delay).
+
+"With support from" fades in (1.5s delay).
+
+"RMIT University" fades in (2.0s delay).
+
+The animation should be smooth and slow (opacity-0 to opacity-100 with a transition duration-1000).
+
+Back Button:
+
+Positioned at the very bottom of the page or just below the credits block.
+
+Styled identically to the buttons on the other pages for a consistent user experience.
+
+It should link back to index.html.
+
+Final Deliverable:
+
+Provide a single, complete credits.html file that includes all HTML, CSS (via Tailwind classes), and JavaScript needed to achieve the cinematic fade-in effect. The code should be well-commented, especially the JavaScript for the animation logic.
+---
+Role: You are an expert front-end developer and a master storyteller through UI/UX, capable of crafting immersive textual introductions.
+
+Objective: Create a single-file, fully responsive "Begin Journey" introductory page for "Beyond the Window Frame". This page will feature a narrative text displayed with a captivating typing animation, setting up the main character, An. After the text is fully revealed, a "Continue" button will appear, leading the player to "Chapter 1: The Weight of Second Place". The entire project must be contained within a single begin.html file, using CDN links for all external resources.
+
+Project Details:
+
+Page Title: Begin Journey
+
+Theme: Maintain the introspective, atmospheric, and slightly melancholic yet hopeful mood. The page should feel like the opening scene of a visual novel.
+
+Narrative Content (for typing animation): "Character: Nguyễn Tuấn An, an 11th-grade student. To his teachers, he's a brilliant mind. To his parents, he's the embodiment of their hopes. To his friends, he's the quiet, reliable one. But inside, An is navigating a fog that's slowly rolling in, obscuring the world he's supposed to conquer."
+
+Action: After the text animation, a "Continue" button should appear.
+
+Next Page: The "Continue" button will link to a placeholder page for Chapter 1, which will be named chapter1.html.
+
+Technical Specifications:
+
+HTML5: Clean, semantic HTML structure.
+
+Tailwind CSS 4.0 (CDN): Use the latest Tailwind v4 browser script via CDN. All styling must be done using Tailwind utility classes directly in the HTML.
+
+CDN Script: <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+JavaScript: All necessary JavaScript for the typing animation and button visibility must be included within a <script> tag in the same HTML file. No external JS files.
+
+External Libraries (CDN Only - No Install):
+
+Google Fonts: Use 'Inter' font, imported via CDN, for consistency.
+
+tsParticles (CDN): Reuse the same subtle, animated background effect from previous pages.
+
+CDN Script: <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+Design and UI/UX Requirements:
+
+Overall Layout:
+
+Full-screen background with tsParticles animation.
+
+The narrative text and the "Continue" button should be centered both vertically and horizontally within a well-defined, slightly transparent container. This container should provide ample padding and width constraints (e.g., max-w-3xl) to ensure readability.
+
+Maintain the dark, atmospheric color scheme (#1a202c background, soft off-white text #e2e8f0).
+
+Narrative Text Display:
+
+Font: Use 'Inter', text-xl or text-2xl for readability, with font-light or font-normal.
+
+Typing Animation: The text should appear character by character, simulating a typewriter effect.
+
+The typing speed should be moderate, allowing the user to read comfortably.
+
+Include a subtle, blinking cursor effect at the end of the typing animation until the "Continue" button appears.
+
+Line Breaks: The text should wrap naturally within its container.
+
+Continue Button:
+
+Initial State: The button should be hidden (opacity-0, pointer-events-none) until the typing animation is fully complete.
+
+Appearance: After the animation, the button should fade in smoothly (transition-opacity duration-500) over 0.5 to 1 second.
+
+Styling: Style it consistently with the "Begin Journey" button from your main menu (e.g., soft, pill-shaped, muted accent color on hover).
+
+Text: "Continue to Chapter 1: The Weight of Second Place"
+
+Final Deliverable:
+
+Provide a single, complete begin.html file that includes all HTML, CSS (via Tailwind classes), and JavaScript. The JavaScript must handle the typing animation, cursor effect, and the delayed appearance of the "Continue" button. The code should be well-commented for clarity.
+---
+The Prompt for Copilot AI (Interactive Chapter Page)
+Role: You are an expert front-end developer specializing in creating interactive, story-driven web experiences, similar to a visual novel.
+
+Objective: Create a single-file, interactive chapter page for the game "Beyond the Window Frame". This page will display a story that branches based on user choices. The page will initially show "Chapter 1". When the user makes a choice, the current text will be replaced by the corresponding next chapter (e.g., Chapter 2A, 2B, or 2C) on the same page without reloading. The entire project must be contained within a single chapter1.html file.
+
+Project Details:
+
+Page Title: Chapter 1: The Weight of Second Place
+
+Theme: Maintain the introspective, atmospheric, and minimalist design. The focus should be on readability and immersion in the story.
+
+Core Functionality: This is a branching narrative. The page will contain the content for Chapter 1 and all three branches of Chapter 2 (2A, 2B, 2C) within the same HTML file, structured in separate <div>s. JavaScript will be used to show/hide these <div>s based on the user's choices.
+
+Content Structure:
+
+Use the following text and structure. Pay close attention to the choice points and their destinations.
+
+(Start of Content Block)
+
+Chapter 1: The Weight of Second Place
+You can feel the tension of the classroom, thick with the scent of old paper and nervous sweat. The math teacher, a man whose smile was as rare as a perfect score, is handing back the midterms. An's heart isn't just beating; it's a frantic drum against his ribs. It’s not even that he was scared of failing. He knew he hadn’t. He was just terrified of not getting a perfect score. The paper landed on his desk, face down. He held his breath, hoping. He flipped it over. A 9.5 out of 10. It was circled in this super bright red ink. An excellent score for anyone else, but for An, it's a glaring spotlight on his one stupid mistake. He could totally picture it—the one careless calculation, the moment of overconfidence. Then, the teacher put the class rankings up on the screen. And sure enough, his name was right there, right under Minh’s. Second. That one word, ‘Second’, just felt like a judgement. Dinner that night was uncomfortably quiet. All that could be heard was the clinking of chopsticks. It just felt like a countdown to ‘the talk’. Finally, his mother cleared her throat. "I saw the class list your teacher posted," her voice was really calm… too calm. "Second place is very good, An. We’re proud." An just knew what was coming next. There was always a 'but'. And sure enough, she said, "But… your cousin Minh got a perfect 10! His parents must be so proud. You’re just as smart as him. You just need to focus a little more, and stop getting distracted. I know you can be the best." And she probably thought she was encouraging him, a push of confidence for him. But to An, it just felt like she was dropping stones in his pockets, making him feel worthless. His chest just got all tight. He wanted to scream and tell his mom that he studied until his eyes blurred, that he gave it everything he had. But he just… couldn’t say anything. The words were all caught in his throat, like he was just stuck between feeling like a failure and trying to be a good son. HE THOUGHT: “Focus more? Are you kidding me? How? I barely sleep as it is. I already gave up playing football with my friends. What else do they even want from me? It’s like… why is nothing I do ever good enough for them?”
+
+CHOICE POINT 1:
+A. "I will try harder next time, mom." -> Go to Chapter 2A: The Grind.
+
+B. "I already studied really hard mom…." -> Go to Chapter 2B: The Ripple.
+
+C. (Say nothing and go to your room.) -> Go to Chapter 2C: The Bubble.
+
+Chapter 2A: The Grind
+(From Choice 1A: You promised to try harder. You are the dutiful son.) The “try harder” thing just becomes his motto. It’s all he thinks about. He’s getting up at 5 AM just to memorize chemistry formulas, skipping lunch to finish physics homework. His whole life just shrunk down to the four walls of his bedroom. The only ‘sun’ he ever saw was his desk lamp. You know the foggy feeling you get when you’re exhausted? For him, it just kept getting thicker. It wasn’t just a feeling anymore; it felt… physical, like a weight. He had this dull headache all the time that just wouldn’t go away. Food tasted like nothing… like ash. He’d look in the mirror and not even recognize himself - just this tired-looking kid with huge dark circles under his eyes. So then, his literature teacher, Ms. Mai, pulls him aside after class. She’s holding his last essay. She just says, “An, this isn’t like you. The analysis is pretty shallow, and the writing… it just feels tired. Your grades are slipping in all your classes.” And she’s looking at him with pity. Which, honestly, felt even worse than if she’d been mad. She says, “School policy means I have to refer you to the school counselor. Maybe talking to Mr. Binh can help you… get your motivation back.” And An’s just standing there, thinking: “Motivation? It’s not motivation I’m lacking. It’s… something else. Like a spark. A reason. But… maybe she’s right. Maybe I do need a different kind of help. What if this guy, Mr. Binh, actually gets it?”
+
+CHOICE POINT 2A:
+A1. "Yes, ma'am, I will go to his office." -> Go to Chapter 3A: The Counselor's Office.
+
+A2. "I'm fine, just a little tired. I can handle it myself, actually." -> Go to Chapter 3B: The All-Nighter.
+
+Chapter 2B: The Ripple
+(From Choice 1B: You defended yourself. A small act of defiance.) What he said just hangs in the air. His mother’s face tightened up. It wasn’t that she was mad. It was something worse - this deep, sad disappointment. She said: "Studying hard is your duty, An. Being the best is how you repay us. Don't make any excuses." The rest of the dinner is awfully quiet, just suffocating. And for the next few days, it was like a cold war in the house. His mom would still pack his lunch and ask about his homework, but the warmth is gone. It felt like her love now is conditional, like he has to earn it by winning awards or getting the top grades. All that tension makes it impossible to focus. At school, he’d just stare at the blackboard, and all the numbers and letters swim together. His best friend, Linh, totally noticed. She sounds casual, but her eyes are serious. She kinda corners him by the water cooler. She’s just like, "Okay, spill it," her tone light but her eyes serious. "You look like you're carrying the whole world on your shoulders. What’s up? Fight with your parents?" And he’s just thinking, “If I tell her, is she even going to get it? Or is she just gonna say, “Your mom’s right, just study?” She’s my friend, but… does anyone really get this kind of pressure? But Godness, holding all this in… I feel like I’m going to burn out.”
+
+CHOICE POINT 2B:
+B1. "It's nothing. Just family stuff. Don’t mind it at all." -> Go to Chapter 3C: The Mask.
+
+B2. "It's my mom... She doesn't think I'm trying hard enough. It's like I can never be good enough for her." -> Go to Chapter 3D: The Lifeline.
+
+Chapter 2C: The Bubble
+(From Choice 1C: You retreated into silence. It's your fortress.) His room became his own world. He closed the door, and the silence felt like such a relief. It's better than dealing with the judgment and all expectations. He started having his meals there, claiming that he had too much homework. He put on his headphones, not to listen to music, but to use them as a shield, a "do not disturb" sign for the world. The next morning, An went to school in a really bad mood. During the break, his best friend, Linh, tried to cheer him up: "Come on, An, come and play with us!”. He looked up from his book, the words meaningless squiggled on the page. Just like the thought of them all laughing and talking… it just felt so exhausting. It's like a language he’d forgotten how to speak. HE THOUGHT: I should go. That’s the normal thing to do. But then… I’d have to smile. I’d have to pretend I actually care about all their gossip and jokes. It’s just easier to stay here. It’s safer. But God… it’s so lonely.
+
+CHOICE POINT 2C:
+C1. "Thanks, but I have to finish my work. Maybe next time." -> Go to Chapter 3E: The Glass Wall.
+
+C2. (He sighs, closes the book, and gives a tiring nod.) -> Go to Chapter 3D: The Lifeline.
+
+(End of Content Block)
+Technical Specifications:
+
+HTML5: A clean, semantic HTML structure.
+
+Tailwind CSS 4.0 (CDN): Use the latest Tailwind v4 browser script via CDN.
+
+CDN Script: <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+JavaScript: All necessary JavaScript must be included within a <script> tag.
+
+External Libraries (CDN Only):
+
+Google Fonts: Use 'Inter'.
+
+tsParticles (CDN): Reuse the same subtle, animated background effect.
+
+Design and UI/UX Requirements:
+
+Layout: All content should be in a single, vertically centered container with a maximum width (max-w-3xl) to ensure readability.
+
+Typography and Color:
+
+Crucial: All narrative and choice text must use the Tailwind class text-white/70 for a slightly faded, atmospheric look.
+
+Chapter headings (e.g., "Chapter 1: The Weight of Second Place") should be slightly more prominent (e.g., text-white, font-bold).
+
+Internal thoughts (like "HE THOUGHT:") should be styled distinctly, perhaps with italics.
+
+Choice Buttons:
+
+Style the choices as clean, minimalist buttons.
+
+They should have a subtle hover effect (e.g., background color change or text brightness change).
+
+They should be clearly separated from the main narrative text.
+
+Transitions: When the user makes a choice, the transition to the next chapter block should be smooth. Use a gentle fade-out/fade-in animation.
+
+Core JavaScript Functionality:
+
+Structure: Each chapter/section (1, 2A, 2B, 2C) must be in its own container <div> with a unique ID (e.g., id="chapter-1", id="chapter-2a").
+
+Initial State: On page load, only the <div> for chapter-1 is visible. All other chapter <div>s must be hidden by default.
+
+Interaction:
+
+The choice buttons are the key interactive elements. Assign data-target attributes to each button that correspond to the ID of the chapter it leads to (e.g., <button data-target="chapter-2a">...</button>).
+
+Write a single JavaScript function that handles clicks on these buttons.
+
+When a button is clicked, the script must: a. Identify the currently visible chapter <div> and fade it out. b. Read the data-target attribute from the clicked button. c. Find the target chapter <div> by its ID and fade it in.
+
+Final Deliverable:
+
+Provide completely all chapters files file that contains all the HTML, CSS (via Tailwind classes), and JavaScript needed to create this interactive, branching narrative experience. The code must be well-commented, especially the JavaScript logic.
+---
+combine the begin and chapter1 file into 1 file then adjust the chapter 3 and ending to this content
+"""
+Chapter 3A: The Counselor's Office (need to the change content)
+(From 2A1: You agreed to see the counselor, hoping for a lifeline.)
+The "counselor's office" is a storage closet with a desk. The man behind it, Mr. Binh, is the school's head of discipline. He doesn't look at you; he looks at your file, his lip curled in a sneer.
+"So, Ms. Mai says you've lost your motivation," he says, his voice dripping with condescension. "Grades are slipping. Feeling sad?" He says the word "sad" as if it's a dirty word.
+An tried to explain. He talked about the pressure, the exhaustion, the feeling of emptiness. Mr Binh; however, waved a dismissive hand.
+"Depression? That's a Western disease for rich kids with too much time. You have food, home and parents who sacrifice for you. You're being selfish and ungrateful," he declares. "What you need is discipline, not pity. You should look at yourself instead and stop wasting my time."
+His words hit An like a physical blow, knocking the air from your lungs. An wasn’t just misunderstood; he was condemned. The one door he tried to open was slammed in your face. You are the problem. Your feelings are a weakness. You are utterly, completely alone.
+-> This path leads directly to Ending 3: The Shattered Glass.
+Chapter 3B: The All-Nighter
+(From 2A2: You decided to handle it yourself. More pressure is the only solution you know.)
+So An decided, “Okay, I just need more discipline.” He went out and bought a pack of redbull cans. Sleep is a luxury that he can't afford. For a week, he lived in this caffeine-fueled haze. And he finished his assignments, he memorized the notes, but none of it was actually sticking. His brain just felt like a soggy sponge.
+The night before the final Physics exam, he was just staring at pages of equations, and they might be hieroglyphics as well. He hadn’t slept in, like 40 hours. His hands were shaking and his heart was pounding. He started to feel weird, detached thing, like he’s watching himself from the ceiling
+-> This path leads directly to Ending 2: The Unending Grey.
+Chapter 3C: The Mask
+(From 2B1: You hid the truth from Linh. The mask stays on.)
+You brush off Linh's concern with a practiced smile. "Honestly, it's fine. Don't worry." She looks at you, unconvinced, but lets it go.
+You've successfully protected your secret. But in doing so, you've pushed away the one person who might have helped. The loneliness intensifies. You go home and apologize to your mother, not because you believe you were wrong, but because the conflict is too tiring. She accepts your apology, and the cold war ends, but nothing has been resolved. You are back to being the dutiful, compliant son. You function, you study, you get decent grades. But inside, you are hollow.
+-> This path leads directly to Ending 2: The Unending Grey.
+Chapter 3D: The Lifeline
+(From 2B2 or 2C2: You took a risk and showed your vulnerability.)
+The words kinda tumbled out, all clumsy and quiet. He just said: "It's like... no matter what I do, it's never enough. I'm so tired of trying."
+And An was totally expecting a pep talk. Instead, she just listened. She didn’t interrupt once. When he was done, she was quiet for a moment. Then she said, "That sounds incredibly hard. I'm sorry, An."
+She didn’t try to offer solutions or told him if he was wrong. She just sat with him in his sadness. Then she bought him a lychee tea, and they just sat there together in this really comfortable silence. For the first time in months, the heavy weight on his shoulders felt just a little bit lighter. It’s not like he was fixed or anything. But he wasn’t alone anymore. And that felt like everything.
+-> This path leads directly to Ending 1: Sunlight on the Sill.
+Chapter 3E: The Glass Wall
+(From 2C1: You pushed Linh away. The bubble is now sealed.)
+He just said: “Yeah, maybe next time.”, but they both knew it’s not going to happen. He just watched her walk back to her friends, who were all laughing. And it’s like this thick, invisible wall went up between him and them. He could see them, he could hear them having a good time, but he just couldn’t connect. It’s like he’s on the outside looking in, just… watching a life he’s supposed to be living.
+And that one decision really stuck with him. He just kept pulling away, more and more, until the real world felt like some movie he was barely paying attention to. At that point, his isolation was pretty much complete. It was like a prison he’d built for himself. There was no one left to call.
+-> This path leads directly to Ending 3: The Shattered Glass.
+THE ENDINGS
+Ending 1: Sunlight on the Sill (The Good Ending)
+The final scene shows you and Linh on a bench after school. She helped you find an online forum for Vietnamese youth dealing with stress. You haven't posted yet, but you've been reading the stories. They feel familiar. You're not cured, but you have a name for the fog now. You have a friend who knows. You take a sip of your tea, and for the first time in a long, long time, you can actually taste it. The sun feels warm on your skin. The window is no longer a barrier, but just a window, with a whole world waiting on the other side.
+Ending 2: The Unending Grey (The Neutral Ending)
+The final scene is five years later. You are at a prestigious university, just like your parents wanted. You are a top student. You do everything you're supposed to do. You are a success story. But you feel nothing. No joy in your achievements, no sadness in your failures. Life is a series of tasks to be completed. You look out your dorm window at a grey, rainy city, the same hollow ache as a quiet, constant companion. You didn't break, but you were never put back together.
+Ending 3: The Shattered Glass (The Bad Ending)
+The final scene is not about you. It's a black screen, with a series of voicemails playing.
+Your Mother (sobbing, incoherent): "An... please... I was wrong. I don't care about you being in the first place. I just want my son... I just want my An back..."
+Linh (voice thick with guilt): "I knew. I knew something was wrong. I saw it. Why didn't I push harder? Why did I let you say 'next time'? I'm so sorry, An. Please... I'm so sorry."
+The final image is your phone, lying on your desk. The screen is lit up with one last text from Linh, sent hours ago, unread: "Hey, are you okay? I'm here if you want to talk."
+"""

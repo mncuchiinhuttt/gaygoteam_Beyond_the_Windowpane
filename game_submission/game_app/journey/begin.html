@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Begin Journey | Beyond the Window Frame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              slateNight: '#111827',
+              textSoft: '#e2e8f0',
+              accentLavender: '#a78bfa',
+            },
+            keyframes: {
+              caret: {
+                '0%, 45%': { opacity: 1 },
+                '55%, 100%': { opacity: 0 },
+              },
+              fade: {
+                '0%': { opacity: 0, transform: 'translateY(24px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              caret: 'caret 1.1s steps(1) infinite',
+              fade: 'fade 1s ease-out forwards',
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  </head>
+  <body
+    class="relative min-h-screen bg-slateNight text-textSoft antialiased font-inter"
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/background.jpg');"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute inset-0 bg-slateNight/85"
+      aria-hidden="true"
+    ></div>
+    <div id="tsparticles" class="absolute inset-0"></div>
+    <main
+      class="relative z-10 flex min-h-screen items-center justify-center px-6 py-20"
+    >
+      <div
+        class="w-full max-w-3xl space-y-16 rounded-[2.75rem] border border-white/10 bg-white/5 px-12 py-16 backdrop-blur-2xl shadow-[0_32px_90px_rgba(8,12,24,0.65)]"
+      >
+        <section
+          id="intro-section"
+          class="space-y-10 text-center transition-opacity duration-700"
+        >
+          <div class="space-y-3 animate-fade" style="animation-delay: 0.05s">
+            <p class="text-sm uppercase tracking-[0.45em] text-white/55">
+              Begin Journey
+            </p>
+            <h1 class="text-4xl font-light text-white">Beyond the Window Frame</h1>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              id="narrative"
+              class="min-h-[12rem] text-2xl font-light leading-relaxed text-white/70"
+              aria-live="polite"
+            ></p>
+            <span
+              id="cursor"
+              class="inline-block h-7 w-[2px] translate-y-1 bg-textSoft align-middle animate-caret"
+              aria-hidden="true"
+            ></span>
+          </div>
+          <div class="mt-8 flex justify-center">
+            <button
+              id="intro-continue"
+              type="button"
+              class="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-10 py-4 text-lg font-medium text-white/70 opacity-0 pointer-events-none transition duration-500 ease-out hover:border-accentLavender/70 hover:bg-accentLavender/10 hover:text-accentLavender focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accentLavender"
+            >
+              <span>Enter the Story</span>
+              <span
+                class="transition-transform duration-300 group-hover:translate-x-1"
+                aria-hidden="true"
+              >
+                &rarr;
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <div
+          id="story-section"
+          class="hidden opacity-0 space-y-16 transition-opacity duration-700"
+        >
+          <section
+            id="chapter-1"
+            class="chapter space-y-6 text-white/70 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">
+                Chapter 1: The Weight of Second Place
+              </h2>
+            </header>
+            <p class="text-white/70">
+              You can feel the tension of the classroom, thick with the scent of old paper and nervous sweat. The math teacher, a man whose smile was as rare as a perfect score, is handing back the midterms. An's heart isn't just beating; it's a frantic drum against his ribs.
+            </p>
+            <p class="text-white/70">
+              It's not even that he was scared of failing. He knew he hadn't. He was just terrified of not getting a perfect score. The paper landed on his desk, face down. He held his breath, hoping. He flipped it over. A 9.5 out of 10. It was circled in this super bright red ink.
+            </p>
+            <p class="text-white/70">
+              An excellent score for anyone else, but for An, it's a glaring spotlight on his one stupid mistake. He could totally picture it--the one careless calculation, the moment of overconfidence. Then, the teacher put the class rankings up on the screen. And sure enough, his name was right there, right under Minh's. Second.
+            </p>
+            <p class="text-white/70">
+              That one word, 'Second', just felt like a judgement. Dinner that night was uncomfortably quiet. All that could be heard was the clinking of chopsticks. It just felt like a countdown to 'the talk'.
+            </p>
+            <p class="text-white/70">
+              Finally, his mother cleared her throat. "I saw the class list your teacher posted," her voice was really calm... too calm. "Second place is very good, An. We're proud." An just knew what was coming next. There was always a 'but'.
+            </p>
+            <p class="text-white/70">
+              And sure enough, she said, "But... your cousin Minh got a perfect 10! His parents must be so proud. You're just as smart as him. You just need to focus a little more, and stop getting distracted. I know you can be the best."
+            </p>
+            <p class="text-white/70">
+              And she probably thought she was encouraging him, a push of confidence for him. But to An, it just felt like she was dropping stones in his pockets, making him feel worthless. His chest just got all tight.
+            </p>
+            <p class="text-white/70">
+              He wanted to scream and tell his mom that he studied until his eyes blurred, that he gave it everything he had. But he just... couldn't say anything. The words were all caught in his throat, like he was just stuck between feeling like a failure and trying to be a good son.
+            </p>
+            <p class="italic text-white/70">
+              HE THOUGHT: "Focus more? Are you kidding me? How? I barely sleep as it is. I already gave up playing football with my friends. What else do they even want from me? It's like... why is nothing I do ever good enough for them?"
+            </p>
+            <div class="mt-8 space-y-4">
+              <p class="text-white font-medium">Choice Point 1</p>
+              <div class="grid gap-3">
+                <button
+                  type="button"
+                  data-target="chapter-2a"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  A. "I will try harder next time, mom."
+                </button>
+                <button
+                  type="button"
+                  data-target="chapter-2b"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  B. "I already studied really hard mom...."
+                </button>
+                <button
+                  type="button"
+                  data-target="chapter-2c"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  C. (Say nothing and go to your room.)
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="chapter-2a"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 2: The Grind</h2>
+            </header>
+            <p class="text-white/70">
+              The "try harder" thing just becomes his motto. It's all he thinks about. He's getting up at 5 AM just to memorize chemistry formulas, skipping lunch to finish physics homework. His whole life just shrunk down to the four walls of his bedroom.
+            </p>
+            <p class="text-white/70">
+              The only 'sun' he ever saw was his desk lamp. You know the foggy feeling you get when you're exhausted? For him, it just kept getting thicker. It wasn't just a feeling anymore; it felt... physical, like a weight. He had this dull headache all the time that just wouldn't go away.
+            </p>
+            <p class="text-white/70">
+              Food tasted like nothing... like ash. He'd look in the mirror and not even recognize himself - just this tired-looking kid with huge dark circles under his eyes.
+            </p>
+            <p class="text-white/70">
+              So then, his literature teacher, Ms. Mai, pulls him aside after class. She's holding his last essay. She just says, "An, this isn't like you. The analysis is pretty shallow, and the writing... it just feels tired. Your grades are slipping in all your classes."
+            </p>
+            <p class="text-white/70">
+              And she's looking at him with pity. Which, honestly, felt even worse than if she'd been mad. She says, "School policy means I have to refer you to the school counselor. Maybe talking to Mr. Binh can help you... get your motivation back."
+            </p>
+            <p class="text-white/70">
+              And An's just standing there, thinking: "Motivation? It's not motivation I'm lacking. It's... something else. Like a spark. A reason. But... maybe she's right. Maybe I do need a different kind of help. What if this guy, Mr. Binh, actually gets it?"
+            </p>
+            <div class="mt-8 space-y-4">
+              <p class="text-white font-medium">Choice Point 2</p>
+              <div class="grid gap-3">
+                <button
+                  type="button"
+                  data-target="chapter-3a"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  1. "Yes, ma'am, I will go to his office."
+                </button>
+                <button
+                  type="button"
+                  data-target="chapter-3b"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  2. "I'm fine, just a little tired. I can handle it myself, actually."
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="chapter-2b"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 2: The Ripple</h2>
+            </header>
+            <p class="text-white/70">
+              What he said just hangs in the air. His mother's face tightened up. It wasn't that she was mad. It was something worse - this deep, sad disappointment.
+            </p>
+            <p class="text-white/70">
+              She said: "Studying hard is your duty, An. Being the best is how you repay us. Don't make any excuses." The rest of the dinner is awfully quiet, just suffocating. And for the next few days, it was like a cold war in the house.
+            </p>
+            <p class="text-white/70">
+              His mom would still pack his lunch and ask about his homework, but the warmth is gone. It felt like her love now is conditional, like he has to earn it by winning awards or getting the top grades.
+            </p>
+            <p class="text-white/70">
+              All that tension makes it impossible to focus. At school, he'd just stare at the blackboard, and all the numbers and letters swim together. His best friend, Linh, totally noticed. She sounds casual, but her eyes are serious.
+            </p>
+            <p class="text-white/70">
+              She kinda corners him by the water cooler. She's just like, "Okay, spill it," her tone light but her eyes serious. "You look like you're carrying the whole world on your shoulders. What's up? Fight with your parents?"
+            </p>
+            <p class="text-white/70">
+              And he's just thinking, "If I tell her, is she even going to get it? Or is she just gonna say, 'Your mom's right, just study?' She's my friend, but... does anyone really get this kind of pressure? But goodness, holding all this in... I feel like I'm going to burn out."
+            </p>
+            <div class="mt-8 space-y-4">
+              <p class="text-white font-medium">Choice Point 2</p>
+              <div class="grid gap-3">
+                <button
+                  type="button"
+                  data-target="chapter-3c"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  1. "It's nothing. Just family stuff. Don't mind it at all."
+                </button>
+                <button
+                  type="button"
+                  data-target="chapter-3d"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  2. "It's my mom... She doesn't think I'm trying hard enough. It's like I can never be good enough for her."
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="chapter-2c"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 2: The Bubble</h2>
+            </header>
+            <p class="text-white/70">
+              His room became his own world. He closed the door, and the silence felt like such a relief. It's better than dealing with the judgment and all expectations.
+            </p>
+            <p class="text-white/70">
+              He started having his meals there, claiming that he had too much homework. He put on his headphones, not to listen to music, but to use them as a shield, a "do not disturb" sign for the world.
+            </p>
+            <p class="text-white/70">
+              The next morning, An went to school in a really bad mood. During the break, his best friend, Linh, tried to cheer him up: "Come on, An, come and play with us!".
+            </p>
+            <p class="text-white/70">
+              He looked up from his book, the words meaningless squiggled on the page. Just like the thought of them all laughing and talking... it just felt so exhausting. It's like a language he'd forgotten how to speak.
+            </p>
+            <p class="italic text-white/70">
+              HE THOUGHT: I should go. That's the normal thing to do. But then... I'd have to smile. I'd have to pretend I actually care about all their gossip and jokes. It's just easier to stay here. It's safer. But God... it's so lonely.
+            </p>
+            <div class="mt-8 space-y-4">
+              <p class="text-white font-medium">Choice Point 2</p>
+              <div class="grid gap-3">
+                <button
+                  type="button"
+                  data-target="chapter-3e"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  1. "Thanks, but I have to finish my work. Maybe next time."
+                </button>
+                <button
+                  type="button"
+                  data-target="chapter-3d"
+                  class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-left text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+                >
+                  2. (He sighs, closes the book, and gives a tiring nod.)
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="chapter-3a"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 3: The Counselor's Office</h2>
+            </header>
+            <p class="text-white/70">
+              The "counselor's office" is a storage closet with a desk. The man behind it, Mr. Binh, is the school's head of discipline. He doesn't look at you; he looks at your file, his lip curled in a sneer.
+            </p>
+            <p class="text-white/70">
+              "So, Ms. Mai says you've lost your motivation," he says, his voice dripping with condescension. "Grades are slipping. Feeling sad?" He says the word "sad" as if it's a dirty word.
+            </p>
+            <p class="text-white/70">
+              An tried to explain. He talked about the pressure, the exhaustion, the feeling of emptiness. Mr. Binh, however, waved a dismissive hand.
+            </p>
+            <p class="text-white/70">
+              "Depression? That's a Western disease for rich kids with too much time. You have food, home, and parents who sacrifice for you. You're being selfish and ungrateful," he declares. "What you need is discipline, not pity. You should look at yourself instead and stop wasting my time."
+            </p>
+            <p class="text-white/70">
+              His words hit An like a physical blow, knocking the air from your lungs. An wasn't just misunderstood; he was condemned. The one door he tried to open was slammed in your face. You are the problem. Your feelings are a weakness. You are utterly, completely alone.
+            </p>
+            <p class="text-white/70 font-medium">
+              This path leads directly to Ending 3: The Shattered Glass.
+            </p>
+            <div class="mt-6">
+              <button
+                type="button"
+                data-target="ending-3"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Continue to Ending 3: The Shattered Glass
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="chapter-3b"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 3: The All-Nighter</h2>
+            </header>
+            <p class="text-white/70">
+              So An decided, "Okay, I just need more discipline." He went out and bought a pack of energy drinks. Sleep is a luxury that he can't afford.
+            </p>
+            <p class="text-white/70">
+              For a week, he lived in this caffeine-fueled haze. He finished his assignments, he memorized the notes, but none of it was actually sticking. His brain just felt like a soggy sponge.
+            </p>
+            <p class="text-white/70">
+              The night before the final physics exam, he was just staring at pages of equations, and they might as well be hieroglyphics. He hadn't slept in almost forty hours. His hands were shaking and his heart was pounding. He started to feel this weird, detached sensation, like he's watching himself from the ceiling.
+            </p>
+            <p class="text-white/70 font-medium">
+              This path leads directly to Ending 2: The Unending Grey.
+            </p>
+            <div class="mt-6">
+              <button
+                type="button"
+                data-target="ending-2"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Continue to Ending 2: The Unending Grey
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="chapter-3c"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 3: The Mask</h2>
+            </header>
+            <p class="text-white/70">
+              You brush off Linh's concern with a practiced smile. "Honestly, it's fine. Don't worry." She looks at you, unconvinced, but lets it go.
+            </p>
+            <p class="text-white/70">
+              You've successfully protected your secret. But in doing so, you've pushed away the one person who might have helped. The loneliness intensifies. You go home and apologize to your mother, not because you believe you were wrong, but because the conflict is too tiring.
+            </p>
+            <p class="text-white/70">
+              She accepts your apology, and the cold war ends, but nothing has been resolved. You are back to being the dutiful, compliant son. You function, you study, you get decent grades. But inside, you are hollow.
+            </p>
+            <p class="text-white/70 font-medium">
+              This path leads directly to Ending 2: The Unending Grey.
+            </p>
+            <div class="mt-6">
+              <button
+                type="button"
+                data-target="ending-2"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Continue to Ending 2: The Unending Grey
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="chapter-3d"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 3: The Lifeline</h2>
+            </header>
+            <p class="text-white/70">
+            The words tumble out, all clumsy and quiet. He says, "It's like... no matter what I do, it's never enough. I'm so tired of trying."
+            </p>
+            <p class="text-white/70">
+              And An was totally expecting a pep talk. Instead, she just listened. She didn't interrupt once. When he was done, she was quiet for a moment. Then she said, "That sounds incredibly hard. I'm sorry, An."
+            </p>
+            <p class="text-white/70">
+              She didn't try to offer solutions or tell him he was wrong. She just sat with him in his sadness. Then she bought him a lychee tea, and they just sat there together in this really comfortable silence. For the first time in months, the heavy weight on his shoulders felt just a little bit lighter. It's not like he was fixed or anything. But he wasn't alone anymore. And that felt like everything.
+            </p>
+            <p class="text-white/70 font-medium">
+              This path leads directly to Ending 1: Sunlight on the Sill.
+            </p>
+            <div class="mt-6">
+              <button
+                type="button"
+                data-target="ending-1"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Continue to Ending 1: Sunlight on the Sill
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="chapter-3e"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Chapter 3: The Glass Wall</h2>
+            </header>
+            <p class="text-white/70">
+              He just said: "Yeah, maybe next time," but they both knew it's not going to happen. He watched her walk back to her friends, who were all laughing.
+            </p>
+            <p class="text-white/70">
+              It's like this thick, invisible wall went up between him and them. He could see them, he could hear them having a good time, but he just couldn't connect. It's like he's on the outside looking in, just watching a life he's supposed to be living.
+            </p>
+            <p class="text-white/70">
+              That one decision sticks with him. He keeps pulling away, more and more, until the real world feels like some movie he's barely paying attention to. At that point, his isolation is almost complete. It's a prison he built for himself. There is no one left to call.
+            </p>
+            <p class="text-white/70 font-medium">
+              This path leads directly to Ending 3: The Shattered Glass.
+            </p>
+            <div class="mt-6">
+              <button
+                type="button"
+                data-target="ending-3"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Continue to Ending 3: The Shattered Glass
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="ending-1"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Ending 1: Sunlight on the Sill</h2>
+            </header>
+            <p class="text-white/70">
+              The final scene shows you and Linh on a bench after school. She helped you find an online forum for Vietnamese youth dealing with stress. You haven't posted yet, but you've been reading the stories. They feel familiar.
+            </p>
+            <p class="text-white/70">
+              You're not cured, but you have a name for the fog now. You have a friend who knows. You take a sip of your tea, and for the first time in a long, long time, you can actually taste it. The sun feels warm on your skin. The window is no longer a barrier, but just a window, with a whole world waiting on the other side.
+            </p>
+            <div class="mt-10 flex justify-center">
+              <button
+                type="button"
+                data-target="chapter-1"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Restart the Journey
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="ending-2"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Ending 2: The Unending Grey</h2>
+            </header>
+            <p class="text-white/70">
+              The final scene is five years later. You are at a prestigious university, just like your parents wanted. You are a top student. You do everything you're supposed to do. You are a success story.
+            </p>
+            <p class="text-white/70">
+              But you feel nothing. No joy in your achievements, no sadness in your failures. Life is a series of tasks to be completed. You look out your dorm window at a grey, rainy city, the same hollow ache as a quiet, constant companion. You didn't break, but you were never put back together.
+            </p>
+            <div class="mt-10 flex justify-center">
+              <button
+                type="button"
+                data-target="chapter-1"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Try Another Path
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="ending-3"
+            class="chapter hidden space-y-6 text-white/70 opacity-0 transition-opacity duration-500"
+          >
+            <header class="space-y-2">
+              <p class="text-sm uppercase tracking-[0.4em] text-white/60">
+                Beyond the Window Frame
+              </p>
+              <h2 class="text-3xl font-semibold text-white">Ending 3: The Shattered Glass</h2>
+            </header>
+            <p class="text-white/70">
+              The final scene is not about you. It's a black screen, with a series of voicemails playing.
+            </p>
+            <p class="text-white/70">
+              Your mother (sobbing, incoherent): "An... please... I was wrong. I don't care about you being in the first place. I just want my son... I just want my An back..."
+            </p>
+            <p class="text-white/70">
+              Linh (voice thick with guilt): "I knew. I knew something was wrong. I saw it. Why didn't I push harder? Why did I let you say 'next time'? I'm so sorry, An. Please... I'm so sorry."
+            </p>
+            <p class="text-white/70">
+              The final image is your phone, lying on your desk. The screen is lit up with one last text from Linh, sent hours ago, unread: "Hey, are you okay? I'm here if you want to talk."
+            </p>
+            <div class="mt-10 flex justify-center">
+              <button
+                type="button"
+                data-target="chapter-1"
+                class="choice-button rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-white/70 transition duration-300 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentLavender"
+              >
+                Rewind to Chapter 1
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const introSection = document.getElementById('intro-section');
+        const storySection = document.getElementById('story-section');
+        const narrativeText = document.getElementById('narrative');
+        const cursor = document.getElementById('cursor');
+        const introContinue = document.getElementById('intro-continue');
+        const chapters = document.querySelectorAll('.chapter');
+        const choiceButtons = document.querySelectorAll('.choice-button');
+        let activeChapter = document.getElementById('chapter-1');
+
+        const introCopy =
+          "Character: Nguyễn Tuấn An, an 11th-grade student. To his teachers, he's a brilliant mind. To his parents, he's the embodiment of their hopes. To his friends, he's the quiet, reliable one. But inside, An is navigating a fog that's slowly rolling in, obscuring the world he's supposed to conquer.";
+        let charIndex = 0;
+        const baseSpeed = 40;
+
+        const typeCharacter = () => {
+          if (charIndex < introCopy.length) {
+            const currentChar = introCopy.charAt(charIndex);
+            narrativeText.textContent += currentChar;
+            charIndex += 1;
+            const delay = ['.', '!', '?', ','].includes(currentChar) ? baseSpeed * 4 : baseSpeed;
+            setTimeout(typeCharacter, delay);
+          } else {
+            cursor.classList.add('opacity-0');
+            introContinue.classList.remove('opacity-0', 'pointer-events-none');
+          }
+        };
+
+        typeCharacter();
+
+        introContinue.addEventListener('click', () => {
+          introSection.classList.add('opacity-0');
+          introSection.addEventListener(
+            'transitionend',
+            () => {
+              introSection.classList.add('hidden');
+              storySection.classList.remove('hidden');
+              requestAnimationFrame(() => {
+                storySection.classList.remove('opacity-0');
+              });
+            },
+            { once: true }
+          );
+        });
+
+        const showChapter = (targetId) => {
+          const targetChapter = document.getElementById(targetId);
+          if (!targetChapter || targetChapter === activeChapter) {
+            return;
+          }
+
+          activeChapter.classList.add('opacity-0');
+          activeChapter.addEventListener(
+            'transitionend',
+            () => {
+              activeChapter.classList.add('hidden');
+              activeChapter = targetChapter;
+              activeChapter.classList.remove('hidden');
+              requestAnimationFrame(() => {
+                activeChapter.classList.remove('opacity-0');
+                activeChapter.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              });
+            },
+            { once: true }
+          );
+        };
+
+        choiceButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const targetId = button.dataset.target;
+            showChapter(targetId);
+          });
+        });
+
+        chapters.forEach((chapter) => {
+          if (chapter !== activeChapter) {
+            chapter.classList.add('hidden', 'opacity-0');
+          }
+        });
+
+        tsParticles.load({
+          id: 'tsparticles',
+          options: {
+            background: {
+              color: '#0f172a',
+            },
+            fullScreen: {
+              enable: false,
+            },
+            particles: {
+              number: {
+                value: 26,
+                density: {
+                  enable: true,
+                  area: 720,
+                },
+              },
+              color: {
+                value: ['#a78bfa', '#38bdf8', '#f8fafc'],
+              },
+              opacity: {
+                value: { min: 0.08, max: 0.2 },
+                animation: {
+                  enable: true,
+                  speed: 0.2,
+                  sync: false,
+                },
+              },
+              size: {
+                value: { min: 0.6, max: 2.2 },
+              },
+              move: {
+                enable: true,
+                speed: 0.35,
+                direction: 'none',
+                random: true,
+                straight: false,
+                outModes: {
+                  default: 'out',
+                },
+              },
+              links: {
+                enable: false,
+              },
+            },
+            detectRetina: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

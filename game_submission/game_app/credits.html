@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credits | Beyond the Window Frame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              slateNight: '#111827',
+              textSoft: '#e2e8f0',
+              accentLavender: '#a78bfa',
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="relative min-h-screen overflow-hidden bg-slateNight text-textSoft antialiased font-inter"
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('./assets/background.jpg');"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute inset-0 bg-slateNight/85"
+      aria-hidden="true"
+    ></div>
+    <main
+      class="relative z-10 flex min-h-screen items-center justify-center px-6 py-16"
+    >
+      <div
+        class="w-full max-w-2xl rounded-[2.75rem] border border-white/10 bg-white/5 px-12 py-16 backdrop-blur-2xl shadow-[0_30px_80px_rgba(8,12,24,0.6)]"
+      >
+        <div class="space-y-6 text-center">
+          <p
+            class="text-xs uppercase tracking-[0.5em] text-white/50 opacity-0 translate-y-4 transition-all duration-1000"
+            data-fade
+            data-delay="0"
+          >
+            Beyond the Window Frame
+          </p>
+          <div
+            class="space-y-3 opacity-0 translate-y-6 transition-all duration-1000"
+            data-fade
+            data-delay="200"
+          >
+            <span class="text-sm uppercase tracking-[0.35em] text-white/65"
+              >Created By</span
+            >
+            <div class="flex justify-center">
+                <h1
+                  class="max-w-fit text-center bg-gradient-to-r from-pink-500 via-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 bg-clip-text text-4xl font-semibold tracking-tight text-transparent"
+                >
+                  gaygoteam
+                </h1>
+            </div>
+          </div>
+          <div
+            class="space-y-2 opacity-0 translate-y-6 transition-all duration-1000"
+            data-fade
+            data-delay="500"
+          >
+            <p class="text-base text-white/70">Vo Minh Long</p>
+            <p class="text-base text-white/70">Le Dang Quynh Anh</p>
+            <p class="text-base text-white/70">Tran Minh Quan</p>
+            <p class="text-base text-white/70">Pham Gia Bao</p>
+          </div>
+          <div
+            class="space-y-3 pt-6 opacity-0 translate-y-6 transition-all duration-1000"
+            data-fade
+            data-delay="900"
+          >
+            <span class="text-sm uppercase tracking-[0.35em] text-white/65"
+              >An RMIT University Project</span
+            >
+            <p class="text-lg font-medium text-white/80">RMIT University</p>
+          </div>
+        </div>
+        <div
+          class="mt-12 flex justify-center opacity-0 translate-y-6 transition-all duration-1000"
+          data-fade
+          data-delay="1200"
+        >
+          <a
+            href="./index.html"
+            class="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-10 py-4 text-lg font-medium text-textSoft transition duration-300 ease-out hover:border-accentLavender/70 hover:bg-accentLavender/10 hover:text-accentLavender focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accentLavender"
+          >
+            <span class="text-white/70">Back to Menu</span>
+            <span
+              class="transition-transform duration-300 group-hover:-translate-x-1 text-white/70"
+              aria-hidden="true"
+            >
+              &larr;
+            </span>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Stagger the fade animations using data-delay values on each block.
+        const fadeTargets = document.querySelectorAll('[data-fade]');
+        fadeTargets.forEach((target) => {
+          const delay = Number(target.dataset.delay) || 0;
+          setTimeout(() => {
+            target.classList.add('opacity-100', 'translate-y-0');
+          }, delay);
+        });
+      });
+    </script>
+  </body>
+</html>
